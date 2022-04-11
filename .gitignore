@@ -1,3 +1,10 @@
+# Firebase
+.DS_Store
+.firebaserc
+package-lock.json
+yarn.lock
+.firebase
+
 # Logs
 logs
 *.log
