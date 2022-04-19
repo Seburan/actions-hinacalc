@@ -1,4 +1,4 @@
-# Specifications Notes
+# Developer's Notes
 This conversational action has not been designed as product to be widely used.
 This is a sample app quickly designed in my head as I was helping my daughter
 to learn arithmetic at elementary school.
@@ -23,3 +23,6 @@ Quickly develop each use case and validate with UX my daughter.
 * Add Fullfilment to validate operation
 * Add Game loop
 * Add Intent to stop game
+
+# Educational References
++ [Elementary Arithmetic](https://en.wikipedia.org/wiki/Elementary_arithmetic)
