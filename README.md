@@ -1,6 +1,9 @@
 # actions-hinacalc
 Google Assistant Conversational Actions educational game for teaching basic algebra (addition, multiplication etc.)
 
+[Developer's notes](developers-notes.md)
+
+## How to run this conversational action ?
 ### Prerequisites
 1. Node.js and NPM
     + We recommend installing using [nvm for Linux/Mac](https://github.com/creationix/nvm) and [nvm-windows for Windows](https://github.com/coreybutler/nvm-windows)
@@ -24,7 +27,7 @@ Google Assistant Conversational Actions educational game for teaching basic alge
 + You can test your Action on any Google Assistant-enabled device on which the Assistant is signed into the same account used to create this project. Just say or type, “OK Google, talk to my test app”.
 + You can also use the Actions on Google Console simulator to test most features and preview on-device behavior.
 
-## References & Issues
+## Technical References & Issues
 + Questions? Go to [StackOverflow](https://stackoverflow.com/questions/tagged/actions-on-google) or the [Assistant Developer Community on Reddit](https://www.reddit.com/r/GoogleAssistantDev/).
 + For bugs, please report an issue on Github.
 + Actions on Google [Documentation](https://developers.google.com/assistant)
