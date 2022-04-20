@@ -1,0 +1,5 @@
+candidates:
+- promptResponse:
+    firstSimple:
+      variants:
+      - speech: Welcome to the arithmetic trainer. I will help you to memorize addition, subtraction, multiplication and division.

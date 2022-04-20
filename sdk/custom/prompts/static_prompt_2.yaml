@@ -1,0 +1,5 @@
+candidates:
+- promptResponse:
+    firstSimple:
+      variants:
+      - speech: Alright, let's study additions. But first, let me know What's the largest sum you know ?

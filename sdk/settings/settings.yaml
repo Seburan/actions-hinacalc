@@ -1,0 +1,7 @@
+defaultLocale: en
+localizedSettings:
+  displayName: Arithmetic Trainer
+  pronunciation: Arithmetic Trainer
+  voice: female_3
+projectId: actions-hinacalc-dev
+usesInteractiveCanvas: true

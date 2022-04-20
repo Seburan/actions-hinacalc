@@ -1,0 +1,5 @@
+parameters:
+- entitySetReferences:
+    entitySetReferences:
+    - entitySet: EntitySet_actions.intent.GET_LEARNING_RESOURCE_learningResource.name
+  name: learningResource.name

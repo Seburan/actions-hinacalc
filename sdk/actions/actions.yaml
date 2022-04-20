@@ -1,0 +1,3 @@
+custom:
+  actions.intent.GET_LEARNING_RESOURCE: {}
+  actions.intent.MAIN: {}

@@ -1,0 +1,17 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL" && session.params.operation == "addition"
+  transitionToScene: addition_difficulty
+onEnter:
+  staticPromptName: static_prompt_1
+slots:
+- commitBehavior:
+    writeSessionParam: operation
+  name: selected_operation
+  promptSettings:
+    noInputPrompt1:
+      staticPromptName: static_prompt_10
+    noMatchPrompt1:
+      staticPromptName: static_prompt_9
+  required: true
+  type:
+    name: operation_type

@@ -1,0 +1,4 @@
+handlers:
+- name: checkAnswer
+inlineCloudFunction:
+  executeFunction: ActionsOnGoogleFulfillment

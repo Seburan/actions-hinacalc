@@ -1,0 +1,5 @@
+candidates:
+- promptResponse:
+    firstSimple:
+      variants:
+      - speech: I can only help you to study addition, subtraction, multiplication and division. Which operation would you like to study ?

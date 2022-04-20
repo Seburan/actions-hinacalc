@@ -1,0 +1,19 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL"
+  handler:
+    staticPromptName: static_prompt_5
+  transitionToScene: addition_play
+onEnter:
+  staticPromptName: static_prompt_2
+slots:
+- commitBehavior:
+    writeSessionParam: operand
+  name: operand
+  promptSettings:
+    noInputPrompt1:
+      staticPromptName: static_prompt_12
+    noMatchPrompt1:
+      staticPromptName: static_prompt_11
+  required: true
+  type:
+    name: actions.type.Number

@@ -1,0 +1,19 @@
+synonym:
+  entities:
+    addition:
+      synonyms:
+      - addition
+      - +
+    division:
+      synonyms:
+      - division
+      - /
+    multiplication:
+      synonyms:
+      - multiplication
+      - x
+    subtraction:
+      synonyms:
+      - subtraction
+      - '-'
+  matchType: EXACT_MATCH
