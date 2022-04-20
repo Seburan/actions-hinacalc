@@ -24,5 +24,10 @@ Quickly develop each use case and validate with UX my daughter.
 * Add Game loop
 * Add Intent to stop game
 
+
+# Roadmap
+
+* Webhooks deployed on Cloud Functions allow unauthenicated requests. Setup authentication between Assistant Actions project and Webhook deployed on Cloud Function
+
 # Educational References
 + [Elementary Arithmetic](https://en.wikipedia.org/wiki/Elementary_arithmetic)
