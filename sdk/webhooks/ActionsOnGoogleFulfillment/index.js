@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-const { conversation, Suggestion, Image } = require('@assistant/conversation');
+const { conversation, Suggestion, Card, Image } = require('@assistant/conversation');
 const functions = require('firebase-functions');
 
 const app = conversation({debug: true});
@@ -23,9 +23,14 @@ app.handle('checkAnswer', conv => {
   let answer = conv.session.params.answer;
   let message = answer + " ? not exactly. Try again.";
   conv.add(message);
-  conv.add(new Image({
-    url: 'https://static01.nyt.com/images/2021/09/30/fashion/29melting-face-emoji/29melting-face-emoji-superJumbo.jpg',
-    alt: 'Melting emoji',
+  conv.add(new Card({
+    "title": "Additions",
+    "subtitle": "Question #1 - Score : 0",
+    "text": "1 + 2 = ?",
+    "image": new Image({
+      url: 'https://static01.nyt.com/images/2021/09/30/fashion/29melting-face-emoji/29melting-face-emoji-superJumbo.jpg',
+      alt: 'Melting emoji',
+    })
   }));
 });
 
