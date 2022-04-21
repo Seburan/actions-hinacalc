@@ -17,47 +17,47 @@
 const { conversation, Suggestion, Card, Image } = require('@assistant/conversation');
 const functions = require('firebase-functions');
 
-const app = conversation({debug: true});
+const app = conversation({ debug: true });
 
-app.handle('checkAnswer', conv => {
-  let answer = conv.session.params.answer;
-  let message = answer + " ? not exactly. Try again.";
+app.handle('checkAnswer', (conv) => {
+  const answer = conv.session.params.answer;
+  const message = answer + ' ? not exactly. Try again.';
   conv.add(message);
   conv.add(new Card({
-    "title": "Additions",
-    "subtitle": "Question #1 - Score : 0",
-    "text": "1 + 2 = ?",
-    "image": new Image({
+    'title': 'Additions',
+    'subtitle': 'Question #1 - Score : 0',
+    'text': '1 + 2 = ?',
+    'image': new Image({
       url: 'https://static01.nyt.com/images/2021/09/30/fashion/29melting-face-emoji/29melting-face-emoji-superJumbo.jpg',
       alt: 'Melting emoji',
-    })
+    }),
   }));
 });
 
 
-app.handle('menu', conv => {
-  let counter = conv.user.params.counter;
-  let favoriteNum = conv.session.params.favoriteNum;
+app.handle('menu', (conv) => {
+  const counter = conv.user.params.counter;
+  const favoriteNum = conv.session.params.favoriteNum;
   let message = 'You can save data in the user storage via several ways. Through slots and of course through your webhook.';
-  if (favoriteNum){
+  if (favoriteNum) {
     message = message + ` I remember that your favorite number is ${favoriteNum}.`;
   }
-  if (counter){
+  if (counter) {
     message = message + ` I remember that the counter is at ${counter}.`;
   }
   conv.add(message);
-  conv.add(new Suggestion({ title: 'slots'}));
-  conv.add(new Suggestion({ title: 'webhook'}));
+  conv.add(new Suggestion({ title: 'slots' }));
+  conv.add(new Suggestion({ title: 'webhook' }));
 });
 
-app.handle('counter', conv => {
-  if (!conv.user.params.counter){
+app.handle('counter', (conv) => {
+  if (!conv.user.params.counter) {
     conv.user.params.counter = 0;
   }
   conv.user.params.counter = parseInt(conv.user.params.counter) + 1;
   conv.add(`The counter is currently: ${conv.user.params.counter}. You can increase or go back to the main menu.`);
-  conv.add(new Suggestion({ title: 'increase'}));
-  conv.add(new Suggestion({ title: 'menu'}));
+  conv.add(new Suggestion({ title: 'increase' }));
+  conv.add(new Suggestion({ title: 'menu' }));
 });
 
 exports.ActionsOnGoogleFulfillment = functions.https.onRequest(app);
