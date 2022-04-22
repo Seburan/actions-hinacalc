@@ -17,7 +17,7 @@ Google Assistant Conversational Actions educational game for teaching basic alge
 1. From the [Actions on Google Console](https://console.actions.google.com/), **New project** > **Create project** > under **What kind of Action do you want to build?** > **Custom** > **Blank project**
 
 #### Actions CLI
-1. Install the [Actions CLI](https://developers.google.com/assistant/actionssdk/gactions) from npm `npm iinstall -g @assistant/gactions`
+1. Install the [Actions CLI](https://developers.google.com/assistant/actionssdk/gactions) from npm `npm install -g @assistant/gactions`
 1. Navigate to `sdk/settings/settings.yaml`, and replace `<PROJECT_ID>` with your project ID
 1. Run `gactions login` to login to your account.
 1. Run `gactions push` to push your project.
