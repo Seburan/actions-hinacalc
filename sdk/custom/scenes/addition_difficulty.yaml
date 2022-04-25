@@ -1,19 +1,19 @@
 conditionalEvents:
 - condition: scene.slots.status == "FINAL"
   handler:
-    staticPromptName: static_prompt_5
+    staticPromptName: static_prompt_7
   transitionToScene: addition_play
 onEnter:
-  staticPromptName: static_prompt_2
+  staticPromptName: static_prompt_6
 slots:
 - commitBehavior:
-    writeSessionParam: operand
-  name: operand
+    writeSessionParam: difficulty
+  name: difficulty
   promptSettings:
     noInputPrompt1:
-      staticPromptName: static_prompt_12
+      staticPromptName: static_prompt_14
     noMatchPrompt1:
-      staticPromptName: static_prompt_11
+      staticPromptName: static_prompt_13
   required: true
   type:
     name: actions.type.Number

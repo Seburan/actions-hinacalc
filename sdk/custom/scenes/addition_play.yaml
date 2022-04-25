@@ -2,7 +2,7 @@ conditionalEvents:
 - condition: scene.slots.status == "FINAL"
   handler:
     webhookHandler: checkAnswer
-  transitionToScene: addition_play
+  transitionToScene: answer_feedback
 onEnter:
   staticPromptName: static_prompt_4
 slots:
@@ -11,6 +11,8 @@ slots:
   name: answer
   promptSettings:
     noInputPrompt1:
+      staticPromptName: static_prompt_8
+    noMatchPrompt1:
       staticPromptName: static_prompt_8
   required: true
   type:

@@ -1,1 +1,6 @@
-synonym: {}
+synonym:
+  entities:
+    addition: {}
+    division: {}
+    multiplication: {}
+    subtraction: {}

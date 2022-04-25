@@ -1,0 +1,12 @@
+candidates:
+- promptResponse:
+    content:
+      card:
+        image:
+          alt: :-)
+        subtitle: 'Question #$session.params.round - Score : $session.params.score'
+        text: $session.params.quiz $session.params.answer
+        title: $session.params.operation
+    firstSimple:
+      variants:
+      - speech: Good answer !

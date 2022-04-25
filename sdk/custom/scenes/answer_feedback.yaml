@@ -1,0 +1,15 @@
+conditionalEvents:
+- condition: session.params.answerIsCorrect == false
+  handler:
+    staticPromptName: static_prompt_11
+  transitionToScene: addition_play
+- condition: session.params.answerIsCorrect == true
+  handler:
+    staticPromptName: static_prompt_15
+intentEvents:
+- intent: "YES"
+  transitionToScene: addition_play
+- handler:
+    staticPromptName: static_prompt_5
+  intent: "NO"
+  transitionToScene: actions.scene.END_CONVERSATION

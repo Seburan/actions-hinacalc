@@ -1,0 +1,5 @@
+candidates:
+- promptResponse:
+    firstSimple:
+      variants:
+      - speech: Thanks. I will now ask you to solve additions. The sum you'll have to guess will be lower than or equal to $session.params.difficulty .

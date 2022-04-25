@@ -2,4 +2,4 @@ candidates:
 - promptResponse:
     firstSimple:
       variants:
-      - speech: I am sorry, I did not get that. What's the largest sum you know ?
+      - speech: $session.params.answer ? not exactly. Try again.
