@@ -22,10 +22,12 @@ const app = conversation({ debug: true });
 // make quiz
 app.handle('makeQuiz', (conv) => {
   // update round #
-  if (!conv.session.params.round) {
+  if (conv.session.params.round === null || conv.session.params.round === undefined) {
     conv.session.params.round = 0;
   }
-  conv.session.params.round = parseInt(conv.user.params.round) + 1;
+  console.log('round before increment = ', conv.session.params.round);
+  conv.session.params.round = parseInt(conv.session.params.round) + 1;
+  console.log('round after increment =', conv.session.params.round);
 
   // reset retryCount
   conv.session.params.retryCount = 0;
@@ -64,8 +66,7 @@ app.handle('makeQuiz', (conv) => {
   // save expected answer in sessionm
   conv.session.params.expectedAnswer = expectedAnswer;
 
-  // Assistant will ask quiz in next turn
-  conv.add(quiz + '?');
+  // DO NOT ADD Conversation in the code as we need to handle I18N in Actions Builder
 });
 
 
@@ -105,11 +106,11 @@ app.handle('reviewAnswer', (conv) => {
   if (answerIsCorrect == true) {
     let score = 0;
     const retryCount = conv.session.params.retryCount;
+
     // update session user score
-    if (!conv.session.params.score) {
+    if (conv.session.params.score === null || conv.session.params.score === undefined) {
       conv.session.params.score = 0;
     }
-    const sessionScore = parseInt(conv.session.params.score);
 
     if (retryCount == 0) {
       score = 10;
@@ -120,13 +121,17 @@ app.handle('reviewAnswer', (conv) => {
     } else {
       score = 1;
     }
-    conv.session.params.score = sessionScore + score;
+    console.log('score before increment = ', conv.session.params.score);
+    conv.session.params.score = parseInt(conv.session.params.score) + score;
+    console.log('score after increment = ', conv.session.params.score);
 
     // update global user score
-    if (!conv.user.params.score) {
+    if (conv.user.params.score === null || conv.user.params.score === undefined) {
       conv.user.params.score = 0;
     }
+    console.log('user score before increment = ', conv.user.params.score);
     conv.user.params.score = parseInt(conv.user.params.score) + score;
+    console.log('user score after increment = ', conv.user.params.score);
   }
 });
 

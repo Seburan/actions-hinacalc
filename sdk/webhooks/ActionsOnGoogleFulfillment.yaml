@@ -1,4 +1,5 @@
 handlers:
-- name: checkAnswer
+- name: makeQuiz
+- name: reviewAnswer
 inlineCloudFunction:
   executeFunction: ActionsOnGoogleFulfillment

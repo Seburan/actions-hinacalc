@@ -2,4 +2,4 @@ candidates:
 - promptResponse:
     firstSimple:
       variants:
-      - speech: 1 + 2 equals ?
+      - speech: You did a great job today !. bye.

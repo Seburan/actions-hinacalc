@@ -9,4 +9,4 @@ candidates:
         title: $session.params.operation
     firstSimple:
       variants:
-      - speech: Good answer !
+      - speech: Good answer ! Would you like to continue ?

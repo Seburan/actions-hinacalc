@@ -1,5 +1,13 @@
 candidates:
 - promptResponse:
+    content:
+      card:
+        image:
+          alt: ???
+          url: https://developers.google.com/assistant/assistant_96.png
+        subtitle: $session.params.round
+        text: '$session.params.quiz ? \nQuestion #$session.params.round'
+        title: $session.params.operation
     firstSimple:
       variants:
-      - speech: You did a great job today !. bye.
+      - speech: $session.params.quiz ?
