@@ -3,10 +3,14 @@ candidates:
     content:
       card:
         image:
-          alt: :-)
-        subtitle: 'Question #$session.params.round - Score : $session.params.score'
-        text: $session.params.quiz $session.params.answer
-        title: $session.params.operation
+          url: https://upload.wikimedia.org/wikipedia/commons/a/a3/Arithmetic_symbols.svg
+        text: ' Which operation would you like to study ? + - × ÷'
+        title: Arithmetic Trainer
     firstSimple:
       variants:
-      - speech: Good answer ! Would you like to continue ?
+      - speech: Which operation would you like to study ?
+    suggestions:
+    - title: Addition
+    - title: Subtraction
+    - title: Multiplication
+    - title: Division

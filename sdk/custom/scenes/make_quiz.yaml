@@ -1,0 +1,5 @@
+conditionalEvents:
+- condition: session.params.operation == "addition"
+  transitionToScene: play_addition
+onEnter:
+  webhookHandler: makeQuiz

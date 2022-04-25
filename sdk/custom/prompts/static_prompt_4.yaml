@@ -2,4 +2,8 @@ candidates:
 - promptResponse:
     firstSimple:
       variants:
-      - speech: You did a great job today !. bye.
+      - speech: Alright, let's study additions. But first, let me know What's the largest sum you know ?
+    suggestions:
+    - title: "10"
+    - title: "100"
+    - title: "1000"

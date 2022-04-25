@@ -12,17 +12,17 @@ Quickly develop each use case and validate with UX my daughter.
 
 ## Use Case #1 : MVP
 1. User select an operation (addition), a level of difficulty.
-2. Assistant propose an operation
-3. User answer
-4. if answer is correct, propose a new operation. If answer is incorrect, tell user to try again.
-5. stop game when user says "stop"
+2. Assistant propose an quiz
+3. User answers
+4. if answer is correct, propose a new quiz. If answer is incorrect, tell user to try again.
+5. stop game when user says "stop here"
 
 ## Todo
 
-* Add Fullfilment to generate a random operation
-* Add Fullfilment to validate operation
-* Add Game loop
-* Add Intent to stop game
+- [x] Add Fullfilment to generate a random quiz
+- [x] Add Fullfilment to review answer
+- [x] Add Game loop
+- [x] Add Global Intent to stop game
 
 
 # Roadmap

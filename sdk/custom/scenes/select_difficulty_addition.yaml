@@ -1,10 +1,10 @@
 conditionalEvents:
-- condition: scene.slots.status == "FINAL"
+- condition: scene.slots.status == "FINAL" && session.params.operation == "addition"
   handler:
-    staticPromptName: static_prompt_7
-  transitionToScene: addition_play
+    staticPromptName: static_prompt_8
+  transitionToScene: make_quiz
 onEnter:
-  staticPromptName: static_prompt_6
+  staticPromptName: static_prompt_4
 slots:
 - commitBehavior:
     writeSessionParam: difficulty

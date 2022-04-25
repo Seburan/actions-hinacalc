@@ -3,3 +3,7 @@ candidates:
     firstSimple:
       variants:
       - speech: What's the largest sum you know ? 10 ? 100 ?
+    suggestions:
+    - title: "10"
+    - title: "100"
+    - title: "1000"

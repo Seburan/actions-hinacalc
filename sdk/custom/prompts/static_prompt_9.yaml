@@ -2,4 +2,4 @@ candidates:
 - promptResponse:
     firstSimple:
       variants:
-      - speech: I can only help you to study addition, subtraction, multiplication and division. Which operation would you like to study ?
+      - speech: You did a great job today ! You scored $session.params.score in this session, and your overall score until now is $user.params.score. bye.
