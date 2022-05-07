@@ -1,16 +1,9 @@
 candidates:
 - promptResponse:
-    content:
-      card:
-        image:
-          alt: :-)
-          url: https://developers.google.com/assistant/assistant_96.png
-        subtitle: 'Question # $session.params.round - Your Score : $session.params.score ($user.params.score)'
-        text: $session.params.quiz $session.params.answer
-        title: $session.params.operation
     firstSimple:
       variants:
-      - speech: $session.params.quiz $session.params.answer . Good answer ! Would you like to continue ?
+      - speech: I am sorry I did not catch that. What is the biggest multiplication table you learned ?
     suggestions:
-    - title: Continue
-    - title: Stop here
+    - title: "3"
+    - title: "5"
+    - title: "10"

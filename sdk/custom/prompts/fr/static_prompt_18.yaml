@@ -3,14 +3,14 @@ candidates:
     content:
       card:
         image:
-          url: https://upload.wikimedia.org/wikipedia/commons/a/a3/Arithmetic_symbols.svg
-        text: ' Quelle opération voudrais-tu étudier ? + - × ÷'
-        title: Arithmetic Trainer
+          alt: :-)
+          url: https://developers.google.com/assistant/assistant_96.png
+        subtitle: 'Question # $session.params.round - Your Score : $session.params.score ($user.params.score)'
+        text: $session.params.quiz $session.params.expectedAnswer
+        title: $session.params.operation
     firstSimple:
       variants:
-      - speech: Quelle opération voudrais-tu étudier ?
+      - speech: $session.params.quiz $session.params.expectedAnswer . C'est très bien. Veux-tu continuer ?
     suggestions:
-    - title: Addition
-    - title: Soustraction
-    - title: Multiplication
-    - title: Division
+    - title: Continuer
+    - title: Arrêter le jeu

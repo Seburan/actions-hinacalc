@@ -2,4 +2,8 @@ candidates:
 - promptResponse:
     firstSimple:
       variants:
-      - speech: $session.params.answer ? not exactly. Try again.
+      - speech: I am sorry I did not catch that. What is the biggest multiplication table you learned ?
+    suggestions:
+    - title: "3"
+    - title: "5"
+    - title: "10"

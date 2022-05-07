@@ -1,18 +1,20 @@
 conditionalEvents:
-- condition: session.params.answerIsCorrect == false
+- condition: session.params.answerIsCorrect == false && session.params.retryCount <= 3
   handler:
-    staticPromptName: static_prompt_10
-  transitionToScene: play_addition
+    staticPromptName: static_prompt_17
+  transitionToScene: play_addition_subtraction_multiplication
+- condition: session.params.answerIsCorrect == false && session.params.retryCount > 3
+  transitionToScene: show_answer
 - condition: session.params.answerIsCorrect == true
   handler:
-    staticPromptName: static_prompt_12
+    staticPromptName: static_prompt_18
 intentEvents:
 - intent: "YES"
   transitionToScene: make_quiz
 - intent: "NO"
   transitionToScene: end_quiz
 - handler:
-    staticPromptName: static_prompt_5
+    staticPromptName: static_prompt_14
   intent: actions.intent.NO_INPUT_1
 onEnter:
   webhookHandler: reviewAnswer

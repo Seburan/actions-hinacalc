@@ -2,4 +2,8 @@ candidates:
 - promptResponse:
     firstSimple:
       variants:
-      - speech: $session.params.answer ? Pas tout à fait, essaie encore.
+      - speech: Désolé je n'ai pas compris. Dis moi, jusqu'à quelle table de multiplication connais-tu ?
+    suggestions:
+    - title: "3"
+    - title: "5"
+    - title: "10"

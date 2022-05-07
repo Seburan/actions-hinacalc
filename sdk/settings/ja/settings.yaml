@@ -1,3 +1,12 @@
 localizedSettings:
+  developerEmail: severin.ferrand@gmail.com
+  developerName: Severin Ferrand
   displayName: 小学生算数練習
+  fullDescription: 足し算、引き算、掛け算と割り算を遊びで覚えるゲームです。
+  largeBannerImage: https://lh3.googleusercontent.com/IrhhkIdhdGX1416XWjJyL9Kjj_h-wDKHPKZXIXLUAAFmIHfEApIriGg0tjtJbTCfLaebjYpHTFO4bg
+  privacyPolicyUrl: https://docs.google.com/document/d/1cxVMZCm_fK5aDHK9uTDoBSUB81eX4iAfjt7XYiFC2bk/preview
   pronunciation: 小学生算数練習
+  sampleInvocations:
+  - 小学生算数練習につないで
+  shortDescription: 小学生向け算数練習ができるガーム
+  smallLogoImage: https://lh3.googleusercontent.com/22beiVdp1hMydeO4Uj4GlMFsdh-KHjO-x-jr7JyPlafhe5N-G3SHSq7Tcyh76IU6QnP6FlX-ePu-aw

@@ -2,8 +2,7 @@ candidates:
 - promptResponse:
     firstSimple:
       variants:
-      - speech: Très bien, jouons avec les additions. Dis moi, jusqu'à quel nombre sais-tu compter ?
+      - speech: Veux tu continuer à faire des $session.params.operation ?
     suggestions:
-    - title: "10"
-    - title: "100"
-    - title: "1000"
+    - title: Continuer
+    - title: Arrêter le jeu

@@ -1,19 +1,21 @@
 conditionalEvents:
 - condition: scene.slots.status == "FINAL"
-  handler:
-    staticPromptName: static_prompt_19
   transitionToScene: make_quiz
 onEnter:
-  staticPromptName: static_prompt_16
+  staticPromptName: static_prompt_5
 slots:
 - commitBehavior:
     writeSessionParam: difficulty
   name: difficulty
   promptSettings:
     noInputPrompt1:
-      staticPromptName: static_prompt_21
+      staticPromptName: static_prompt_5
+    noInputPrompt2:
+      staticPromptName: static_prompt_23
     noMatchPrompt1:
-      staticPromptName: static_prompt_20
+      staticPromptName: static_prompt_10
+    noMatchPrompt2:
+      staticPromptName: static_prompt_12
   required: true
   type:
     name: actions.type.Number

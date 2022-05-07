@@ -1,16 +1,9 @@
 candidates:
 - promptResponse:
-    content:
-      card:
-        image:
-          url: https://upload.wikimedia.org/wikipedia/commons/a/a3/Arithmetic_symbols.svg
-        text: ' Which operation would you like to study ? + - × ÷'
-        title: Arithmetic Trainer
     firstSimple:
       variants:
-      - speech: Which operation would you like to study ?
+      - speech: Alright, let's study additions. But first, let me know What's the largest sum you know ?
     suggestions:
-    - title: Addition
-    - title: Subtraction
-    - title: Multiplication
-    - title: Division
+    - title: "10"
+    - title: "100"
+    - title: "1000"

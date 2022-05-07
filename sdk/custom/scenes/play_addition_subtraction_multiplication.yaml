@@ -4,6 +4,10 @@ conditionalEvents:
 intentEvents:
 - intent: I_DONT_KNOW
   transitionToScene: show_answer
+- intent: actions.intent.NO_MATCH_FINAL
+  transitionToScene: show_answer
+- intent: actions.intent.NO_INPUT_FINAL
+  transitionToScene: show_answer
 onEnter:
   staticPromptName: static_prompt_6
 slots:
@@ -12,8 +16,12 @@ slots:
   name: answer
   promptSettings:
     noInputPrompt1:
-      staticPromptName: static_prompt_7
+      staticPromptName: static_prompt_6
+    noInputPrompt2:
+      staticPromptName: static_prompt_6
     noMatchPrompt1:
+      staticPromptName: static_prompt_7
+    noMatchPrompt2:
       staticPromptName: static_prompt_7
   required: true
   type:

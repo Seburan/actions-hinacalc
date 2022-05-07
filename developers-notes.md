@@ -22,11 +22,14 @@ Quickly develop each use case and validate with UX my daughter.
 - [x] Add Game loop
 - [x] Add Global Intent to stop game
 
-## Use Case #2 : MVP
+## Use Case #2 : i18n
 1. Add i18n : french
 2. Add scenario where user does not know answer
 
-
+## Use Case #3 : Multiplication
+1. Add multiplication (French & English)
+2. Add retry timeout
+3. Add meta description for French and Japanese
 
 
 # Roadmap

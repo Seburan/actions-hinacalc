@@ -2,7 +2,8 @@ candidates:
 - promptResponse:
     firstSimple:
       variants:
-      - speech: Veux tu continuer à faire des $session.params.operation ?
+      - speech: Très bien, jouons avec les multiplications. Dis moi, jusqu'à quelle table de multiplication connais-tu ?
     suggestions:
-    - title: Continuer
-    - title: Arrêter le jeu
+    - title: "3"
+    - title: "5"
+    - title: "10"

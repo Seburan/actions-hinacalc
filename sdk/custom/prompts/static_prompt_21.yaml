@@ -2,7 +2,7 @@ candidates:
 - promptResponse:
     firstSimple:
       variants:
-      - speech: Très bien, jouons avec les additions. Dis moi, jusqu'à quel nombre connais-tu les additions ?
+      - speech: What's the largest sum you know ? 10 ? 100 ?
     suggestions:
     - title: "10"
     - title: "100"

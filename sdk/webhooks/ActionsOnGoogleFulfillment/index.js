@@ -25,9 +25,9 @@ app.handle('makeQuiz', (conv) => {
   if (conv.session.params.round === null || conv.session.params.round === undefined) {
     conv.session.params.round = 0;
   }
-  console.log('round before increment = ', conv.session.params.round);
+  // console.log('round before increment = ', conv.session.params.round);
   conv.session.params.round = parseInt(conv.session.params.round) + 1;
-  console.log('round after increment =', conv.session.params.round);
+  // console.log('round after increment =', conv.session.params.round);
 
   // reset retryCount
   conv.session.params.retryCount = 0;
@@ -56,6 +56,14 @@ app.handle('makeQuiz', (conv) => {
     case 'subtraction':
       break;
     case 'multiplication':
+      // make a multiplication where operand is between 1 and "difficulty"
+      operand1 = Math.floor(Math.random() * Math.floor(difficulty)) + 1;
+      // second operand will be random number between 1 and 10
+      operand2 = Math.floor(Math.random() * 10) + 1;
+      // first operand will be between 0 and expectedAnswer - 1
+      expectedAnswer = Math.floor(operand1 * operand2);
+      // save quiz as string
+      quiz = operand1 + ' × ' + operand2 + ' = ';
       break;
     case 'division':
       break;
@@ -112,13 +120,13 @@ app.handle('reviewAnswer', (conv) => {
       conv.session.params.score = 0;
     }
 
-    if (retryCount == 0) {
+    if (retryCount == 0) { // 1st attempt
       score = 10;
     } else if (retryCount == 1) {
       score = 5;
     } else if (retryCount == 2) {
       score = 3;
-    } else {
+    } else { // retryCount >= 3 (4th attempt)
       score = 1;
     }
     console.log('score before increment = ', conv.session.params.score);

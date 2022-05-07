@@ -1,16 +1,9 @@
 candidates:
 - promptResponse:
-    content:
-      card:
-        image:
-          url: https://upload.wikimedia.org/wikipedia/commons/a/a3/Arithmetic_symbols.svg
-        text: Quelle opération voudrais-tu étudier ? + - × ÷
-        title: Hina Calc
     firstSimple:
       variants:
-      - speech: Que voudrais-tu étudier ?
+      - speech: Très bien, jouons avec les additions. Dis moi, jusqu'à quel nombre connais-tu les additions ?
     suggestions:
-    - title: Addition
-    - title: Soustraction
-    - title: Multiplication
-    - title: Division
+    - title: "10"
+    - title: "100"
+    - title: "1000"

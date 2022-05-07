@@ -10,7 +10,7 @@ candidates:
         title: $session.params.operation
     firstSimple:
       variants:
-      - speech: $session.params.quiz $session.params.answe. Would you like to continue ?
+      - speech: 'The answer is : $session.params.quiz $session.params.answe. Would you like to continue ?'
     suggestions:
     - title: Continue
     - title: Stop here

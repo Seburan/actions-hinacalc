@@ -2,8 +2,7 @@ candidates:
 - promptResponse:
     firstSimple:
       variants:
-      - speech: What's the largest sum you know ? 10 ? 100 ?
+      - speech: Would you like to continue ?
     suggestions:
-    - title: "10"
-    - title: "100"
-    - title: "1000"
+    - title: Continue
+    - title: Stop here

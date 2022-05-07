@@ -1,16 +1,5 @@
 candidates:
 - promptResponse:
-    content:
-      card:
-        image:
-          url: https://upload.wikimedia.org/wikipedia/commons/a/a3/Arithmetic_symbols.svg
-        text: ' Quelle opération voudrais-tu étudier ? + - × ÷'
-        title: Arithmetic Trainer
     firstSimple:
       variants:
-      - speech: Je peux t'aider à étudier les additions, soustractions, multiplications et divisions. Que voudrais-tu étudier ?
-    suggestions:
-    - title: Addition
-    - title: Soustraction
-    - title: Multiplication
-    - title: Division
+      - speech: $session.params.answer ? Pas tout à fait, essaie encore.

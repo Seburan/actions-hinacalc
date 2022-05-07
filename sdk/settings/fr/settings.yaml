@@ -1,4 +1,18 @@
 localizedSettings:
+  developerEmail: severin.ferrand@gmail.com
+  developerName: Severin Ferrand
   displayName: Hina Calc
+  fullDescription: |-
+    Ce petit jeu permet aux enfants d'apprendre leurs tables d'addition et de multiplication. Je l'ai créé lorsque ma fille apprenait ses tables en CE1 pour explorer les capacités de Google Assistant.
+
+    Il s'agit essentiellement d'une démo des "Google Assistant Actions" plus que d'un produit fini même s'il peut être utilisé en tant que tel.
+
+    Vous pouvez utiliser cette application comme base ou référence pour développer votre propre application (veuillez vous référer à la license open source)
+  largeBannerImage: https://lh3.googleusercontent.com/IrhhkIdhdGX1416XWjJyL9Kjj_h-wDKHPKZXIXLUAAFmIHfEApIriGg0tjtJbTCfLaebjYpHTFO4bg
+  privacyPolicyUrl: https://docs.google.com/document/d/1cxVMZCm_fK5aDHK9uTDoBSUB81eX4iAfjt7XYiFC2bk/preview
   pronunciation: Hina Calc
+  sampleInvocations:
+  - Parler avec Hina Calc
+  shortDescription: Petit jeu permettant aux enfants d'apprendre leurs tables d'addition et de multiplication
+  smallLogoImage: https://lh3.googleusercontent.com/YzX5wM5nxAJDgUnnHgpokAw4fQWvRLk1F0CU5JJnFjwOvKogRG9SEcMtIJj3qL7kOngO2WbATZo
   voice: female_1

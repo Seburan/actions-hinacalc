@@ -1,17 +1,19 @@
 conditionalEvents:
 - condition: scene.slots.status == "FINAL" && session.params.operation == "addition"
   transitionToScene: select_difficulty_addition
+- condition: scene.slots.status == "FINAL" && session.params.operation == "multiplication"
+  transitionToScene: select_difficulty_multiplication
 onEnter:
-  staticPromptName: static_prompt_16
+  staticPromptName: static_prompt_9
 slots:
 - commitBehavior:
     writeSessionParam: operation
   name: selected_operation
   promptSettings:
     noInputPrompt1:
-      staticPromptName: static_prompt_18
+      staticPromptName: static_prompt_15
     noMatchPrompt1:
-      staticPromptName: static_prompt_17
+      staticPromptName: static_prompt_11
   required: true
   type:
     name: operation_type
