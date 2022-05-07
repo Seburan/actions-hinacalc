@@ -1,0 +1,7 @@
+intentEvents:
+- intent: "YES"
+  transitionToScene: make_quiz
+- intent: "NO"
+  transitionToScene: end_quiz
+onEnter:
+  staticPromptName: static_prompt_2

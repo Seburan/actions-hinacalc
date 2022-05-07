@@ -1,5 +1,0 @@
-candidates:
-- promptResponse:
-    firstSimple:
-      variants:
-      - speech: $session.params.answer ? not exactly. Try again.

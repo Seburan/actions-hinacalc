@@ -1,10 +1,8 @@
 # Developer's Notes
-This conversational action has not been designed as product to be widely used.
-This is a sample app quickly designed in my head as I was helping my daughter
-to learn arithmetic at elementary school.
+This conversational action has not been designed as an end-user product. This is a sample app to demonstrate capabilities of Google Assistant.
+If you are going to build a Google Assistant conversational action product, feel free to use this as a reference.
 
-If you are going to build a Google Assistant conversational action product,
-feel free to use this as a reference.
+The idea came to my head as I was helping my daughter to memorize basic arithmetic learned at elementary school.
 
 # Sprints
 
@@ -24,14 +22,22 @@ Quickly develop each use case and validate with UX my daughter.
 - [x] Add Game loop
 - [x] Add Global Intent to stop game
 
+## Use Case #2 : MVP
+1. Add i18n : french
+2. Add scenario where user does not know answer
+
+
+
 
 # Roadmap
 
 * Webhooks deployed on Cloud Functions allow unauthenicated requests. Setup authentication between Assistant Actions project and Webhook deployed on Cloud Function
-
 * Add score
-
 * Add visual feedbacks
+* Add test framework
+* Add i18n to addition
+* Release on alpha channel
+* AJouter je ne sais pas , ou trop difficile
 
 # Educational References
 + [Elementary Arithmetic](https://en.wikipedia.org/wiki/Elementary_arithmetic)

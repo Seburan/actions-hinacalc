@@ -1,17 +1,20 @@
 conditionalEvents:
 - condition: scene.slots.status == "FINAL"
   transitionToScene: review_answer
+intentEvents:
+- intent: I_DONT_KNOW
+  transitionToScene: show_answer
 onEnter:
-  staticPromptName: static_prompt_5
+  staticPromptName: static_prompt_6
 slots:
 - commitBehavior:
     writeSessionParam: answer
   name: answer
   promptSettings:
     noInputPrompt1:
-      staticPromptName: static_prompt_10
+      staticPromptName: static_prompt_7
     noMatchPrompt1:
-      staticPromptName: static_prompt_10
+      staticPromptName: static_prompt_7
   required: true
   type:
     name: actions.type.Number

@@ -1,13 +1,8 @@
 candidates:
 - promptResponse:
-    content:
-      card:
-        image:
-          alt: ???
-          url: https://developers.google.com/assistant/assistant_96.png
-        subtitle: 'Question # $session.params.round - Your Score : $session.params.score ($user.params.score)'
-        text: $session.params.quiz ?
-        title: $session.params.operation
     firstSimple:
       variants:
-      - speech: $session.params.quiz ?
+      - speech: Would you like to continue ?
+    suggestions:
+    - title: Continue
+    - title: Stop here

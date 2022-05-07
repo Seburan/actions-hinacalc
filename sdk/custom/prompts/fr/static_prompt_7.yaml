@@ -1,5 +1,13 @@
 candidates:
 - promptResponse:
+    content:
+      card:
+        image:
+          alt: ???
+          url: https://developers.google.com/assistant/assistant_96.png
+        subtitle: 'Question # $session.params.round - Ton Score : $session.params.score ($user.params.score)'
+        text: $session.params.quiz ?
+        title: $session.params.operation
     firstSimple:
       variants:
-      - speech: Enter the response that users will see or hear when this event occurs
+      - speech: Désolé je n'ai pas compris. $session.params.quiz ?

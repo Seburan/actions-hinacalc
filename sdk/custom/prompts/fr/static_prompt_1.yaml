@@ -1,0 +1,5 @@
+candidates:
+- promptResponse:
+    firstSimple:
+      variants:
+      - speech: Tu as bien travaillé ! Ton score est de $session.params.score points, et ton score jusqu'à aujourd'hui est de $user.params.score. Aurevoir.

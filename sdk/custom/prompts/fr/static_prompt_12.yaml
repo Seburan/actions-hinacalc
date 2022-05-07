@@ -1,5 +1,16 @@
 candidates:
 - promptResponse:
+    content:
+      card:
+        image:
+          alt: :-)
+          url: https://developers.google.com/assistant/assistant_96.png
+        subtitle: 'Question # $session.params.round - Your Score : $session.params.score ($user.params.score)'
+        text: $session.params.quiz $session.params.expectedAnswer
+        title: $session.params.operation
     firstSimple:
       variants:
-      - speech: Enter the response that users will see or hear when this event occurs
+      - speech: $session.params.quiz $session.params.expectedAnswer . C'est très bien. Veux-tu continuer ?
+    suggestions:
+    - title: Continuer
+    - title: Arrêter le jeu

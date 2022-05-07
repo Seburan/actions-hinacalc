@@ -2,4 +2,7 @@ candidates:
 - promptResponse:
     firstSimple:
       variants:
-      - speech: Enter the response that users will see or hear when this event occurs
+      - speech: Veux tu continuer à faire des $session.params.operation ?
+    suggestions:
+    - title: Continuer
+    - title: Arrêter le jeu

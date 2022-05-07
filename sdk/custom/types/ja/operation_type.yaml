@@ -1,6 +1,17 @@
 synonym:
   entities:
-    addition: {}
-    division: {}
-    multiplication: {}
-    subtraction: {}
+    addition:
+      synonyms:
+      - 足し算
+      - 足し算をやる
+      - 足し算がやりたい
+      - 足し算をする
+    division:
+      synonyms:
+      - 割り算
+    multiplication:
+      synonyms:
+      - 掛け算
+    subtraction:
+      synonyms:
+      - 引き算

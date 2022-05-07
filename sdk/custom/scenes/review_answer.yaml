@@ -1,18 +1,18 @@
 conditionalEvents:
 - condition: session.params.answerIsCorrect == false
   handler:
-    staticPromptName: static_prompt_11
+    staticPromptName: static_prompt_10
   transitionToScene: play_addition
 - condition: session.params.answerIsCorrect == true
   handler:
-    staticPromptName: static_prompt_15
+    staticPromptName: static_prompt_12
 intentEvents:
 - intent: "YES"
   transitionToScene: make_quiz
 - intent: "NO"
   transitionToScene: end_quiz
 - handler:
-    staticPromptName: static_prompt_2
+    staticPromptName: static_prompt_5
   intent: actions.intent.NO_INPUT_1
 onEnter:
   webhookHandler: reviewAnswer

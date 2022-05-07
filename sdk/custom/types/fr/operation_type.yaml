@@ -1,6 +1,22 @@
 synonym:
   entities:
-    addition: {}
-    division: {}
-    multiplication: {}
-    subtraction: {}
+    addition:
+      synonyms:
+      - addition
+      - je veux faire des additions
+      - je veux étudier les additions
+    division:
+      synonyms:
+      - division
+      - je veux faire des divisions
+      - je veux étudier les divisions
+    multiplication:
+      synonyms:
+      - multiplication
+      - je veux faire des multiplications
+      - je veux étudier les multiplications
+    subtraction:
+      synonyms:
+      - soustraction
+      - je veux faire des soustractions
+      - je veux étudier les soustractions

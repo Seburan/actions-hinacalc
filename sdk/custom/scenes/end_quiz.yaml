@@ -2,4 +2,4 @@ conditionalEvents:
 - condition: "TRUE"
   transitionToScene: actions.scene.END_CONVERSATION
 onEnter:
-  staticPromptName: static_prompt_9
+  staticPromptName: static_prompt_1

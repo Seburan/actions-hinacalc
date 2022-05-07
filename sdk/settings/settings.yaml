@@ -1,7 +1,17 @@
+category: EDUCATION_AND_REFERENCE
 defaultLocale: en
 localizedSettings:
+  developerEmail: severin.ferrand@gmail.com
+  developerName: Severin Ferrand
   displayName: Arithmetic Trainer
+  fullDescription: "This conversational action has not been designed as an end-user product. This is a sample app to demonstrate capabilities of Google Assistant. \nIf you are going to build a Google Assistant conversational action product, feel free to use this as a reference.\n\nThe idea came to my head as I was helping my daughter to memorize basic arithmetic learned at elementary school."
+  largeBannerImage: https://lh3.googleusercontent.com/i2gtZ_IEj-NfV8dN8vAgFpBsAWMx1zGvYt4b75bsQnvHSv5XyPUoLPIdpSRU03VTl9goYO9mXGw
+  privacyPolicyUrl: https://docs.google.com/document/d/1cxVMZCm_fK5aDHK9uTDoBSUB81eX4iAfjt7XYiFC2bk/preview
   pronunciation: Arithmetic Trainer
+  sampleInvocations:
+  - Talk to Arithmetic Trainer
+  shortDescription: Arithmetic Trainer helps your kids memorize basic arithmetics learned at elementary school
+  smallLogoImage: https://lh3.googleusercontent.com/GvIjAh1tXC3K_TB8SXB4uxxXAX7iXpWI-2K7E58q7ScRpvYxV9Ai1Sa4jzgByc18DGrhL-3KRtIC
   voice: female_3
 projectId: actions-hinacalc-dev
 usesInteractiveCanvas: true
